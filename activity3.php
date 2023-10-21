@@ -27,7 +27,7 @@
 
           // Prepare and bind the statement
           $stmt = $conn->prepare(
-              "INSERT INTO $table (menu_name, menu_description) VALUES (?, ?)"
+              "INSERT INTO $table (menu_name, menu_desc) VALUES (?, ?)"
           );
           $stmt->bind_param("ss", $menuName,  $menuDescription);
 
